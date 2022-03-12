@@ -1,0 +1,20 @@
+#include<stdio.h>
+#define With 100
+int calculate(int Long,int High); 
+int main()
+{
+	int a,b;
+	int c=20;
+	printf("进行体积计算,请输入长和高：");
+	scanf("%d%d",&a,&b); 
+	int result;
+	result=calculate(a,b);
+	printf("the result is %d",result);
+	return 0;
+ } 
+ int calculate(int Long,int High)
+ {
+ 	int result;
+ 	result=With*(Long+High);
+ 	return result;
+ }
